@@ -1,5 +1,6 @@
 package com.example.helloservices;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,11 +14,14 @@ import java.util.Map;
 @RestController
 public class HelloServicesApplication {
 
+    @Value("${spring.application.name}")
+    String m;
+
     @RequestMapping("/")
     public Map<String, String> hello(){
         Map<String,String> response=new HashMap(){{
             this.put("status","Ok");
-            this.put("message","hello user");
+            this.put("message",m);
 
         }};
         return response;
