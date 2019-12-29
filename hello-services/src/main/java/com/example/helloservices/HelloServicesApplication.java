@@ -17,7 +17,7 @@ public class HelloServicesApplication {
     @Value("${spring.application.name}")
     String m;
 
-    @RequestMapping("/")
+    @RequestMapping("/hi")
     public Map<String, String> hello(){
         Map<String,String> response=new HashMap(){{
             this.put("status","Ok");
