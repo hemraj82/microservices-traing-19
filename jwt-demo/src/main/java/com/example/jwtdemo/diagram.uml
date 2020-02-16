@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="505.0" y="0.0">com.example.jwtdemo.JwtResponse</node>
+    <node x="254.4765625" y="79.0">com.example.jwtdemo.JwtAuthenticationController</node>
+    <node x="279.6875" y="158.0">com.example.jwtdemo.WebSecurityConfig</node>
+    <node x="152.0" y="0.0">com.example.jwtdemo.JwtUserDetailsService</node>
+    <node x="0.0" y="232.0">com.example.jwtdemo.JwtDemoApplication</node>
+    <node x="511.4765625" y="79.0">com.example.jwtdemo.JwtAuthenticationEntryPoint</node>
+    <node x="0.0" y="0.0">com.example.jwtdemo.JwtTokenUtil</node>
+    <node x="36.875" y="79.0">com.example.jwtdemo.JwtRequestFilter</node>
+    <node x="367.0" y="0.0">com.example.jwtdemo.JwtRequest</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.example.jwtdemo.JwtAuthenticationController" target="com.example.jwtdemo.JwtRequest">
+      <point x="29.625" y="-14.5" />
+      <point x="402.6015625" y="59.0" />
+      <point x="426.0" y="59.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.example.jwtdemo.JwtAuthenticationController" target="com.example.jwtdemo.JwtTokenUtil">
+      <point x="-88.875" y="-14.5" />
+      <point x="284.1015625" y="49.0" />
+      <point x="99.0" y="49.0" />
+      <point x="33.0" y="14.5" />
+    </edge>
+    <edge source="com.example.jwtdemo.JwtRequestFilter" target="com.example.jwtdemo.JwtUserDetailsService">
+      <point x="40.0" y="-14.5" />
+      <point x="156.875" y="59.0" />
+      <point x="200.75" y="59.0" />
+      <point x="-48.75" y="14.5" />
+    </edge>
+    <edge source="com.example.jwtdemo.JwtRequestFilter" target="com.example.jwtdemo.JwtTokenUtil">
+      <point x="-40.0" y="-14.5" />
+      <point x="76.875" y="59.0" />
+      <point x="33.0" y="59.0" />
+      <point x="-33.0" y="14.5" />
+    </edge>
+    <edge source="com.example.jwtdemo.JwtAuthenticationController" target="com.example.jwtdemo.JwtResponse">
+      <point x="88.875" y="-14.5" />
+      <point x="461.8515625" y="59.0" />
+      <point x="567.5" y="59.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.example.jwtdemo.JwtAuthenticationController" target="com.example.jwtdemo.JwtUserDetailsService">
+      <point x="-29.625" y="-14.5" />
+      <point x="343.3515625" y="59.0" />
+      <point x="298.25" y="59.0" />
+      <point x="48.75" y="14.5" />
+    </edge>
+    <edge source="com.example.jwtdemo.WebSecurityConfig" target="com.example.jwtdemo.JwtRequestFilter">
+      <point x="-41.75" y="-14.5" />
+      <point x="321.4375" y="133.0" />
+      <point x="116.875" y="133.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.example.jwtdemo.WebSecurityConfig" target="com.example.jwtdemo.JwtAuthenticationEntryPoint">
+      <point x="41.75" y="-14.5" />
+      <point x="404.9375" y="133.0" />
+      <point x="629.9765625" y="133.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.2" x="429.6666666666667" y="91.58333333333337" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
