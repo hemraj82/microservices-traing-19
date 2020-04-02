@@ -10,11 +10,10 @@ import java.util.Map;
 
 
 @RestController
-
 public class HelloService {
 
     @GetMapping("/api/hi")
-    @PreAuthorize("hasAuthority('ADMIN')")
+    @PreAuthorize("hasRole('SUPERADMIN')")
     public Map<String,String> hi(){
         return new HashMap<String,String>(){{
             this.put("message","Hi User");

@@ -17,9 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MySecurityConfig extends WebSecurityConfigurerAdapter {
 
-    private MyAuthenticationEntrypoint myAuthenticationEntrypoint;
-
-
     private BCryptPasswordEncoder passwordEncoder;
     private AuthenticationManager authenticationManager;
 
